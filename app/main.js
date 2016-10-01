@@ -13,4 +13,3 @@ openModalBtn.addEventListener('click', function (e) {
         outputField.textContent = error;
     });
 });
-//# sourceMappingURL=main.js.map

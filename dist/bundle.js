@@ -59,7 +59,7 @@
 	        outputField.textContent = error;
 	    });
 	});
-	//# sourceMappingURL=main.js.map
+
 
 /***/ },
 /* 1 */
@@ -101,7 +101,7 @@
 	    return ModalWindow;
 	}());
 	exports.ModalWindow = ModalWindow;
-	//# sourceMappingURL=modalWindow.js.map
+
 
 /***/ },
 /* 2 */
