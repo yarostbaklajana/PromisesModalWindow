@@ -24,7 +24,7 @@
       <file leaf-file-name="modalmanager.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modalmanager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20">
+            <state relative-caret-position="-223">
               <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
@@ -210,15 +210,15 @@
       <workItem from="1474812789607" duration="13415000" />
       <workItem from="1474905689014" duration="6542000" />
       <workItem from="1475225097919" duration="596000" />
-      <workItem from="1475305138243" duration="233000" />
+      <workItem from="1475305138243" duration="618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37240000" />
+    <option name="totallyTimeSpent" value="37625000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="745" extended-state="0" />
+    <frame x="-7" y="0" width="1378" height="745" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -393,7 +393,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modalmanager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
+        <state relative-caret-position="-223">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
