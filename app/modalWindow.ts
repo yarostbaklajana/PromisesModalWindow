@@ -1,5 +1,4 @@
 'use strict';
-import {Promise} from 'es6-promise';
 
 export class ModalWindow {
     private modalWindow: Element;

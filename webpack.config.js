@@ -15,7 +15,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.ts', '.js', '.js.map']
+        extensions: ['', '.ts']
     },
 
     // Add loader for .ts files.
