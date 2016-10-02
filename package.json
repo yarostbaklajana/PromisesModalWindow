@@ -4,7 +4,6 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "install": "typings install",
     "postinstall": "typings install",
     "start": "webpack && http-server -p 8000",
     "test": "echo \"Error: no test specified\" && exit 1"

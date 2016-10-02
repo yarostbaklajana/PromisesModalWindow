@@ -11,8 +11,8 @@ export class ModalWindow {
     constructor() {
         this.modalWindow = document.querySelector('#modal-container');
         this.inputField = <HTMLInputElement>document.querySelector('#input-field');
-        this.cancel = document.querySelector('#cancel-btn');
-        this.submit = document.querySelector('#submit-btn');
+        this.cancel = <HTMLButtonElement>document.querySelector('#cancel-btn');
+        this.submit = <HTMLButtonElement>document.querySelector('#submit-btn');
     }
 
     show():Promise<string> {
