@@ -2,17 +2,20 @@
  * Created by yaros on 02.10.2016.
  */
 
+
 module.exports = {
+    
     entry: {
         filename: './app/main.ts'
     },
 
     output: {
-       filename: './dist/bundle.js'
+        path: "dist",
+       filename: 'bundle.js'
     },
 
     resolve: {
-        extensions: ['', '.ts', '.js']
+        extensions: ['', '.ts', '.js', '.js.map']
     },
 
     // Add loader for .ts files.
@@ -20,7 +23,8 @@ module.exports = {
         loaders: [
             {
                 test: /\.ts$/,
-                loader: 'awesome-typescript-loader'
+                loader: 'awesome-typescript-loader',
+                exclude: /node_modules/
             }
         ]
     }
