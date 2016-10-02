@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1",
+    "start": "webpack && http-server -p 8000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,9 +16,6 @@
   },
   "devDependencies": {
     "awesome-typescript-loader": "^2.2.4",
-    "babel-core": "^6.17.0",
-    "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.16.0",
     "http-server": "^0.9.0",
     "typescript": "^2.0.3",
     "webpack": "^1.13.2"
