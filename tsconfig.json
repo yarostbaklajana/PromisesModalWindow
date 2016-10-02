@@ -1,5 +1,14 @@
 {
   "compilerOptions" : {
     "target": "ES6"
-  }
+  },
+
+  "files": [
+    "app/main.ts",
+    "app/modalWindow.ts"
+  ],
+
+  "exclude": [
+    "node_modules"
+  ]
 }
