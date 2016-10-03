@@ -37,6 +37,7 @@ module.exports = {
 
     tslint: {
         configuration: {
+            "extends": "tslint:latest",
             rules: {
                 "indent": [true, "spaces"]
             }
@@ -44,7 +45,7 @@ module.exports = {
 
         emitErrors: false,
 
-        failOnHint: false,
+        failOnHint: true,
 
         fileOutput: {
             dir: "./tsLint_report",
