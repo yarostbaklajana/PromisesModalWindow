@@ -1,6 +1,3 @@
-body {
-    margin: 0;
-}
 #modal-container {
     display: flex;
     justify-content: center;
@@ -11,21 +8,6 @@ body {
     width: 100%;
     background-color: rgba(115, 126, 129, 0.5);
 }
-button {
-     border: none;
-     width: 60px;
-     height: 30px;
-     background-color: dodgerblue;
-     color: white;
-     text-align: center;
-     margin: 5px;
- }
-
-label,
-input{
-    display: block;
-    margin: 10px auto;
-}
 
 form {
     height: 120px;
@@ -35,6 +17,13 @@ form {
     text-align: center;
 }
 
+label,
+input{
+    display: block;
+    margin: 10px auto;
+}
+
 #modal-container.hidden {
     display: none;
 }
+

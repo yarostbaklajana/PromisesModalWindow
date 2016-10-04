@@ -1,5 +1,7 @@
 'use strict';
 
+import 'style!css!../styles/modalWindow.css';
+
 export class ModalWindow {
     private modalWindow: Element;
     private inputField: HTMLInputElement;

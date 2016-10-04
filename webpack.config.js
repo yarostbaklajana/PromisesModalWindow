@@ -18,6 +18,14 @@ module.exports = {
     },
 
     module: {
+        
+        loaders: [
+            {
+                test: /\.css$/,
+                loader: "style-loader!css-loader"
+            }
+        ],
+        
         loaders: [
             {
                 test: /\.ts$/,
@@ -31,7 +39,7 @@ module.exports = {
                 test: /\.ts$/,
                 loader: "tslint"
             }
-        ],
+        ]
 
     },
 
@@ -45,15 +53,7 @@ module.exports = {
 
         emitErrors: false,
 
-        failOnHint: true,
-
-        fileOutput: {
-            dir: "./tsLint_report",
-            ext: "xml",
-            clean: true,
-            header: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<checkstyle version=\"5.7\">",
-            footer: "</checkstyle>"
-        }
+        failOnHint: true
     }
 }
 
