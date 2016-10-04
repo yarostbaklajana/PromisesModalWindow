@@ -14,22 +14,22 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.ts']
+        extensions: ['', '.ts', '.css']
     },
 
+
     module: {
-        
-        loaders: [
-            {
-                test: /\.css$/,
-                loader: "style-loader!css-loader"
-            }
-        ],
-        
+
         loaders: [
             {
                 test: /\.ts$/,
-                loader: 'awesome-typescript-loader',
+                loader: 'awesome-typescript',
+                exclude: /node_modules/
+            },
+
+            {
+                test: /\.css$/,
+                loaders: ["style", "css"],
                 exclude: /node_modules/
             }
         ],
@@ -39,7 +39,7 @@ module.exports = {
                 test: /\.ts$/,
                 loader: "tslint"
             }
-        ]
+        ],
 
     },
 

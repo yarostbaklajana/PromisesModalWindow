@@ -2,7 +2,8 @@
  * Created by yaros on 01.10.2016.
  */
 
-import 'style!css!../styles/main.css';
+
+import '../styles/main.css';
 import {ModalWindow} from './modalWindow';
 
 let openModalBtn = document.querySelector('.open-modal');
