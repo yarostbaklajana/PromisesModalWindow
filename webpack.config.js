@@ -14,7 +14,8 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.ts', '.css']
+        extensions: ['', '.ts', '.css'],
+        modules: ['node_modules']
     },
 
 
@@ -27,11 +28,24 @@ module.exports = {
                 exclude: /node_modules/
             },
 
+            
+
             {
                 test: /\.css$/,
-                loaders: ["style", "css"],
-                exclude: /node_modules/
-            }
+                loaders: ["style", "css"]
+            },
+
+
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "file"
+            },
+
+
+            {
+                test: /\.(woff|woff2)$/,
+                loader: "url?limit=10000&mimetype=application/font-woff"
+            },
         ],
 
         preLoaders: [

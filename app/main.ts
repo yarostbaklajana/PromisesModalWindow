@@ -2,7 +2,7 @@
  * Created by yaros on 01.10.2016.
  */
 
-
+import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/main.css';
 import {ModalWindow} from './modalWindow';
 
