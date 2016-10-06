@@ -1,6 +1,6 @@
 'use strict';
 
-import '../styles/modalWindow.css';
+import '../styles/modalWindow';
 
 export class ModalWindow {
     private modalWindow: Element;

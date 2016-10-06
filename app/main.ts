@@ -2,8 +2,8 @@
  * Created by yaros on 01.10.2016.
  */
 
-import 'bootstrap/dist/css/bootstrap.css';
-import '../styles/main.css';
+import 'bootstrap/dist/css/bootstrap';
+import '../styles/main';
 import {ModalWindow} from './modalWindow';
 
 let openModalBtn = document.querySelector('.open-modal');
