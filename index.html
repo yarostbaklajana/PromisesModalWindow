@@ -6,14 +6,14 @@
     <script src="dist/bundle.js" defer></script>
 </head>
 <body>
-    <button class="open-modal btn-primary" type="button">Click Me</button>
+    <button class="open-modal btn-primary btn btn-sm" type="button"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>Click Me</button>
     <p class="output-like"></p>
     <main class='hidden' id="modal-container">
         <form>
             <label>Enter your name: </label>
             <input id="input-field" type="text">
-            <button type="button" id="submit-btn">Send</button>
-            <button type="button" id="cancel-btn">Close</button>
+            <button type="button" class="btn btn-primary btn-sm" id="submit-btn">Send</button>
+            <button type="button" class="btn btn-primary btn-sm" id="cancel-btn">Close</button>
         </form>
     </main>
 </body>
