@@ -6,15 +6,23 @@
     <script src="dist/bundle.js" defer></script>
 </head>
 <body>
-    <button class="open-modal btn-primary btn btn-sm" type="button"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>Click Me</button>
-    <p class="output-like"></p>
-    <main class='hidden' id="modal-container">
-        <form>
-            <label>Enter your name: </label>
+<button class="open-modal btn-primary btn btn-sm" type="button"><span class="glyphicon glyphicon-th"
+                                                                      aria-hidden="true"></span>Click Me
+</button>
+<p class="output-like"></p>
+<main class="hidden" id="modal-container">
+    <form class="modal-content" >
+        <div class="modal-header">
+            <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
             <input id="input-field" type="text">
+        </div>
+        <div class="modal-footer">
             <button type="button" class="btn btn-primary btn-sm" id="submit-btn">Send</button>
             <button type="button" class="btn btn-primary btn-sm" id="cancel-btn">Close</button>
-        </form>
-    </main>
+        </div>
+    </form>
+</main>
 </body>
 </html>
