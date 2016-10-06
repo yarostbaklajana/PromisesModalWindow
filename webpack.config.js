@@ -28,24 +28,20 @@ module.exports = {
                 exclude: /node_modules/
             },
 
-            
-
             {
                 test: /\.css$/,
                 loaders: ["style", "css"]
             },
 
+            {
+                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+                loader: 'url-loader'
+            },
 
             {
                 test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: "file"
-            },
-
-
-            {
-                test: /\.(woff|woff2)$/,
-                loader: "url?limit=10000&mimetype=application/font-woff"
-            },
+            }
         ],
 
         preLoaders: [
