@@ -1,21 +1,14 @@
-#modal-container {
+.modal-dialog {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 0;
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(115, 126, 129, 0.5);
-}
-
-form {
-    width: 400px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 
 
-#modal-container.hidden {
-    display: none;
-}
+
+
+
 
