@@ -18,7 +18,8 @@ export class ModalWindow {
     }
 
     show():Promise<string> {
-        this.modalWindow.classList.remove('hidden');
+        this.modalWindow.classList.remove('hide');
+        this.modalWindow.classList.add('show');
 
         return new Promise((resolve, reject) => {
             this.handleSubmit = () => {
@@ -42,7 +43,8 @@ export class ModalWindow {
     closeModalWindow() {
         this.cancel.removeEventListener('click', this.handleCancel);
         this.submit.removeEventListener('click', this.handleSubmit);
-        this.modalWindow.classList.add('hidden');
+        this.modalWindow.classList.remove('show');
+        this.modalWindow.classList.add('hide');
     }
 }
 
