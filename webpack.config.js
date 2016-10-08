@@ -34,7 +34,7 @@ module.exports = {
             },
 
             {
-                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.ico($|\?)/,
                 loader: 'url-loader'
             },
 
