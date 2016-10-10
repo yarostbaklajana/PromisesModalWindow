@@ -3,24 +3,27 @@
  */
 
 module.exports = {
-
+    
     entry: {
-        filename: './app/main.ts'
+        filename: './app/main'
     },
 
     output: {
-        path: "dist",
-        filename: 'bundle.js'
+        path: __dirname + "/dist",
+        filename: 'bundle.js',
+        publicPath: './'
     },
 
     resolve: {
         extensions: ['', '.ts', '.css'],
-        modules: ['node_modules']
+        modules: ['node_modules', 'styles'],
+        root: __dirname + '/styles'
     },
 
 
-    module: {
 
+
+    module: {
         loaders: [
             {
                 test: /\.ts$/,
@@ -35,12 +38,12 @@ module.exports = {
 
             {
                 test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.ico($|\?)/,
-                loader: 'url-loader'
+                loader: 'url'
             },
 
             {
-                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "file"
+                test: /\.jpg($|\?)/,
+                loader: 'url?limit=8192'
             }
         ],
 
