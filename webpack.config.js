@@ -11,17 +11,18 @@ module.exports = {
     output: {
         path: __dirname + "/dist",
         filename: 'bundle.js',
-        publicPath: './'
+        publicPath: './dist/'
     },
-
+    
+    devtool: 'cheap-source-map-inline',
+    
+    watch: true,
+    
     resolve: {
-        extensions: ['', '.ts', '.css'],
+        extensions: ['', '.ts', '.css', '.scss'],
         modules: ['node_modules', 'styles'],
         root: __dirname + '/styles'
     },
-
-
-
 
     module: {
         loaders: [
@@ -37,13 +38,13 @@ module.exports = {
             },
 
             {
-                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.ico($|\?)/,
-                loader: 'url'
+                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)|\.ico($|\?)|\.jpg($|\?)/,
+                loader: 'url?limit=8192'
             },
 
             {
-                test: /\.jpg($|\?)/,
-                loader: 'url?limit=8192'
+                test: /\.scss$/,
+                loaders: ["style", "css", "sass"]
             }
         ],
 
