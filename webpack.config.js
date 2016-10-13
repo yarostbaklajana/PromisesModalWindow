@@ -16,8 +16,6 @@ module.exports = {
     
     devtool: 'cheap-source-map-inline',
     
-    watch: true,
-    
     resolve: {
         extensions: ['', '.ts', '.css', '.scss'],
         modules: ['node_modules', 'styles'],
